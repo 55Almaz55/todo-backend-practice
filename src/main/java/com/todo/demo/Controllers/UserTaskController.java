@@ -21,7 +21,6 @@ public class UserTaskController {
         this.taskService = taskService;
     }
 
-    // Создать задачу для пользователя
     @PostMapping
     public Task createTaskForUser(@PathVariable int userId, @RequestBody Task task) {
         User user = userService.getUserById(userId).orElseThrow();
@@ -45,7 +44,6 @@ public class UserTaskController {
                 .orElse(null);
     }
 
-    // Обновить задачу
     @PutMapping("/{taskId}")
     public Task updateTaskForUser(@PathVariable int userId, @PathVariable long taskId, @RequestBody Task updatedTask) {
         User user = userService.getUserById(userId).orElseThrow();
@@ -53,7 +51,6 @@ public class UserTaskController {
         return taskService.updateTask(taskId, updatedTask);
     }
 
-    // Удалить задачу
     @DeleteMapping("/{taskId}")
     public String deleteTaskForUser(@PathVariable int userId, @PathVariable long taskId) {
         boolean deleted = taskService.deleteTask(taskId);
