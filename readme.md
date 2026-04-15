@@ -1,34 +1,30 @@
 ## 📌 About the project
 
-This project was built as a personal learning exercise to practice backend development using Java and Spring Boot.
+This project is a backend API for a "Todo" task management application.
 
-The goal was to gain hands-on experience with:
+It was created as a learning project to practice backend development with Java and Spring Boot.
 
-* building REST APIs
-* working with databases (PostgreSQL)
-* implementing authentication and authorization (JWT, Spring Security)
-* structuring a backend application
+## ✨ Functionality
 
-## 🚧 Project status
+The application allows users to:
 
-The project is currently not finished and is still a work in progress.
-Some features may be incomplete or subject to change.
-
-## 🎯 Purpose
-
-This repository reflects my learning process and practical exploration of backend development concepts.
+- register and login
+- create tasks
+- view tasks
+- update tasks
+- delete tasks
 
 ## 🛠️ Tech stack
 
-* Java
-* Spring Boot
-* Spring Security
-* PostgreSQL
-* Maven
+Java, Spring Boot, Spring Security, PostgreSQL, Maven
+
+## 🚧 Project status
+
+The project is still in progress and some features may be incomplete.
 
 ## 📈 What I learned
 
-* how to design REST endpoints
-* basics of authentication using JWT
-* working with database entities and repositories
-* structuring a backend project
+- designing REST APIs
+- implementing authentication using JWT
+- working with database entities and repositories
+- structuring a backend project
